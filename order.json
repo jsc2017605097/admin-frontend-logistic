@@ -1,0 +1,26 @@
+[
+    {
+        "trackingNumber": "1234567890",
+        "carrier": "DHL",
+        "sendDate": "2024-09-15",
+        "deliveryDate": "2024-09-20",
+        "status": "Đang Vận Chuyển",
+        "sender": "Nguyễn Văn A",
+        "receiver": "Trần Thị B",
+        "item": "Điện Thoại Di Động",
+        "weight": "0.5",
+        "cost": "150000"
+    },
+    {
+        "trackingNumber": "0987654321",
+        "carrier": "FedEx",
+        "sendDate": "2024-09-16",
+        "deliveryDate": "2024-09-21",
+        "status": "Đã Đến Kho",
+        "sender": "Lê Văn C",
+        "receiver": "Phạm Thị D",
+        "item": "Laptop",
+        "weight": "2.0",
+        "cost": "2000000"
+    }
+]

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang Quản Lý Vận Đơn</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Quản Lý Mã Vận Đơn</h1>
+        </header>
+        
+        <section class="form-section">
+            <h2>Thêm/Chỉnh Sửa Vận Đơn</h2>
+            <form id="orderForm">
+                <label for="trackingNumber">Mã Vận Đơn:</label>
+                <input type="text" id="trackingNumber" required>
+
+                <label for="carrier">Dịch Vụ Vận Chuyển:</label>
+                <input type="text" id="carrier" required>
+
+                <label for="sendDate">Ngày Gửi Hàng:</label>
+                <input type="date" id="sendDate" required>
+
+                <label for="deliveryDate">Ngày Dự Kiến Giao Hàng:</label>
+                <input type="date" id="deliveryDate" required>
+
+                <label for="status">Trạng Thái:</label>
+                <input type="text" id="status" required>
+
+                <label for="sender">Người Gửi:</label>
+                <input type="text" id="sender" required>
+
+                <label for="receiver">Người Nhận:</label>
+                <input type="text" id="receiver" required>
+
+                <label for="item">Loại Hàng Hóa:</label>
+                <input type="text" id="item" required>
+
+                <label for="weight">Trọng Lượng (kg):</label>
+                <input type="number" id="weight" step="0.01" required>
+
+                <label for="cost">Chi Phí Vận Chuyển:</label>
+                <input type="number" id="cost" step="0.01" required>
+
+                <button type="submit">Lưu Thông Tin</button>
+            </form>
+        </section>
+
+        <section class="table-section">
+            <h2>Danh Sách Vận Đơn</h2>
+            <table id="orderTable">
+                <thead>
+                    <tr>
+                        <th>Mã Vận Đơn</th>
+                        <th>Dịch Vụ Vận Chuyển</th>
+                        <th>Ngày Gửi Hàng</th>
+                        <th>Ngày Dự Kiến Giao Hàng</th>
+                        <th>Trạng Thái</th>
+                        <th>Người Gửi</th>
+                        <th>Người Nhận</th>
+                        <th>Loại Hàng Hóa</th>
+                        <th>Trọng Lượng</th>
+                        <th>Chi Phí (VNĐ)</th>
+                        <th>Chi Phí (CNY)</th> <!-- Cột mới cho CNY -->
+                        <th>Hành Động</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Dữ liệu vận đơn sẽ được thêm vào đây bằng JavaScript -->
+                </tbody>
+            </table>
+        </section>
+    </div>
+
+    <script src="./script.js"></script>
+
+</body>
+</html>
